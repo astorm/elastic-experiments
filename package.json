@@ -1,0 +1,21 @@
+{
+  "name": "test-autocannon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-app": "node app.js",
+    "start-mock-server": "node mock-server.js",
+    "generate-traffic": "npx autocannon -c 100 -d 120 -p 10 localhost:3000/hello"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autocannon": "^7.0.3",
+    "bunyan": "^1.8.15",
+    "elastic-apm-node": "^3.11.0",
+    "express": "^4.17.1"
+  }
+}
